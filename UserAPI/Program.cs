@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Steeltoe.Extensions.Configuration.ConfigServer;
 
-namespace BankingMicroservicesApplication
+namespace UserAPI
 {
     public class Program
     {
@@ -18,14 +18,12 @@ namespace BankingMicroservicesApplication
             CreateWebHostBuilder(args).Build().Run();
         }
 
-       
-public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-         WebHost.CreateDefaultBuilder(args)
-         .ConfigureAppConfiguration((webHostBuilderContext, configurationBuilder) => {
-             var hostingEnvironment = webHostBuilderContext.HostingEnvironment;
-             configurationBuilder.AddConfigServer(hostingEnvironment.EnvironmentName);
-         })
-             .UseStartup<Startup>();
+            public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration((webHostBuilderContext, configurationBuilder) => {
+                var hostingEnvironment = webHostBuilderContext.HostingEnvironment;
+                configurationBuilder.AddConfigServer(hostingEnvironment.EnvironmentName);
+            })
+                .UseStartup<Startup>();
     }
 }
-

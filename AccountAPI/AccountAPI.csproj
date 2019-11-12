@@ -3,14 +3,25 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-    <UserSecretsId>97b90e22-6c2f-4e03-9218-b9a152288421</UserSecretsId>
+    <UserSecretsId>14d8dcda-1f17-4ead-88eb-9799308504a9</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/53ae30a6-f12f-4afa-9e77-2172a7242e25/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/AccountAPI</ApplicationInsightsResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.2105168" />
+    <PackageReference Include="Steeltoe.Discovery.ClientCore" Version="2.3.0" />
     <PackageReference Include="Steeltoe.Extensions.Configuration.ConfigServerCore" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>

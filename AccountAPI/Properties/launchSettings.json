@@ -3,30 +3,33 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:53275",
-      "sslPort": 44375
+      "applicationUrl": "http://localhost:53223",
+      "sslPort": 44380
     }
   },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "launchUrl": "api/values/create-account",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "BankingMicroservicesApplication": {
+    "AccountAPI": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "api/values/create-account",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:4999"
+      "applicationUrl": "http://localhost:5101"
     },
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}"
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/values/create-account"
     }
   }
 }

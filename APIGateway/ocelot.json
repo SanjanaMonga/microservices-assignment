@@ -1,0 +1,40 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/values/create-account",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": "true",
+      "ServiceName": "account-api",
+      "UpstreamPathTemplate": "/account-api/create-account"
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/create-user",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": "true",
+      "ServiceName": "user-api",
+      "UpstreamPathTemplate": "/user-api/create-user"
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/deposit",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": "true",
+      "ServiceName": "transaction-api",
+      "UpstreamPathTemplate": "/transaction-api/deposit"
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/order-cheque-book",
+      "DownstreamScheme": "http",
+      "UseServiceDiscovery": "true",
+      "ServiceName": "cheque-book-handling-api",
+      "UpstreamPathTemplate": "/cheque-book-handling-api/order-cheque-book"
+    }
+  ],
+  "GlobalConfiguration": {
+    "UseServiceDiscovery": true,
+    "ServiceDiscoveryProvider": {
+      "Type": "Eureka",
+      "Host": "localhost",
+      "Port": "8761"
+    }
+  }
+}

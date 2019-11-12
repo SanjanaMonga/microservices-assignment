@@ -3,14 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-    <UserSecretsId>97b90e22-6c2f-4e03-9218-b9a152288421</UserSecretsId>
+    <UserSecretsId>0291ba69-974f-4d45-8db2-40e1d5f590c8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.2105168" />
-    <PackageReference Include="Steeltoe.Extensions.Configuration.ConfigServerCore" Version="2.3.0" />
+    <PackageReference Include="Ocelot" Version="13.5.1" />
+    <PackageReference Include="Ocelot.Provider.Eureka" Version="13.5.1" />
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingMicroservicesApplication", "BankingMicroservicesApplication\BankingMicroservicesApplication.csproj", "{F4227A8C-0454-4136-B473-08C8D998837D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingMicroservicesApplication", "BankingMicroservicesApplication\BankingMicroservicesApplication.csproj", "{F4227A8C-0454-4136-B473-08C8D998837D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGateway", "APIGateway\APIGateway.csproj", "{D38FAFAB-C455-4BA3-AB5E-20A5E522C84D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountAPI", "AccountAPI\AccountAPI.csproj", "{38621508-EFCA-49E3-8B8A-9ECAD9E6C49E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserAPI", "UserAPI\UserAPI.csproj", "{E17576E9-2E99-4C30-9940-5BDA0C96E6E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionAPI", "TransactionAPI\TransactionAPI.csproj", "{02E01F84-5896-4D42-8AEC-8A22296CC50A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChequeBookHandlingAPI", "ChequeBookHandlingAPI\ChequeBookHandlingAPI.csproj", "{1AEB3645-63C8-491D-AD87-73AC77B04293}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{F4227A8C-0454-4136-B473-08C8D998837D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4227A8C-0454-4136-B473-08C8D998837D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4227A8C-0454-4136-B473-08C8D998837D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D38FAFAB-C455-4BA3-AB5E-20A5E522C84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38FAFAB-C455-4BA3-AB5E-20A5E522C84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38FAFAB-C455-4BA3-AB5E-20A5E522C84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38FAFAB-C455-4BA3-AB5E-20A5E522C84D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38621508-EFCA-49E3-8B8A-9ECAD9E6C49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38621508-EFCA-49E3-8B8A-9ECAD9E6C49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38621508-EFCA-49E3-8B8A-9ECAD9E6C49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38621508-EFCA-49E3-8B8A-9ECAD9E6C49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17576E9-2E99-4C30-9940-5BDA0C96E6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17576E9-2E99-4C30-9940-5BDA0C96E6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17576E9-2E99-4C30-9940-5BDA0C96E6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17576E9-2E99-4C30-9940-5BDA0C96E6E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E01F84-5896-4D42-8AEC-8A22296CC50A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E01F84-5896-4D42-8AEC-8A22296CC50A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E01F84-5896-4D42-8AEC-8A22296CC50A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E01F84-5896-4D42-8AEC-8A22296CC50A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEB3645-63C8-491D-AD87-73AC77B04293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEB3645-63C8-491D-AD87-73AC77B04293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEB3645-63C8-491D-AD87-73AC77B04293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEB3645-63C8-491D-AD87-73AC77B04293}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
